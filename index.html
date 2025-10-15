@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Percentage & Grade</title>
+</head>
+<body>
+    <h1>Percentage & Grade Calculator</h1>
+    <script>
+        let obtainedMarks = prompt("Enter your obtained marks:");
+        let totalMarks = prompt("Enter total marks:");
+
+        obtainedMarks = Number(obtainedMarks);
+        totalMarks = Number(totalMarks);
+
+        let percentage = (obtainedMarks / totalMarks) * 100;
+        alert("Your percentage is: " + percentage + "%");
+
+        if (percentage > 90) {
+            alert("Grade: A");
+        } else if (percentage > 80) {
+            alert("Grade: B");
+        } else if (percentage > 70) {
+            alert("Grade: C");
+        } else if (percentage > 60) {
+            alert("Grade: D");
+        } else {
+            alert("Grade: F");
+        }
+    </script>
+</body>
+</html>
